@@ -3,6 +3,11 @@ using MultiDocumenter
 clonedir = mktempdir()
 
 docs = [
+    ("TuringLang/Turing.jl.git", "gh-pages") => MultiDocumenter.MultiDocRef(
+        upstream = joinpath(clonedir, "tur"),
+        path = "tur",
+        name = "Turing"
+    ),
     ("TuringLang/DynamicPPL.jl.git", "gh-pages") => MultiDocumenter.MultiDocRef(
         upstream = joinpath(clonedir, "ppl"),
         path = "ppl",
