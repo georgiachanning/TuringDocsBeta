@@ -1,1 +1,0 @@
-Sitemap: /v0.20.2/sitemap.xml
