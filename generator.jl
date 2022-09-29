@@ -8,7 +8,6 @@ docs = [
         path = "ppl",
         name = "DynamicPPL"
     ),
-    
     ("TuringLang/AdvancedHMC.jl.git", "gh-pages") => MultiDocumenter.MultiDocRef(
         upstream = joinpath(clonedir, "hmc"),
         path = "hmc",
@@ -46,3 +45,6 @@ MultiDocumenter.make(
         engine = MultiDocumenter.FlexSearch
     )
 )
+
+run(Cmd(`touch .nojekyll`, dir=outpath))
+
