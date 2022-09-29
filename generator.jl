@@ -14,13 +14,17 @@ docs = [
         path = "hmc",
         name = "AdvancedHMC"
     ),
+    ("TuringLang/NestedSamplers.jl.git", "gh-pages") => MultiDocumenter.MultiDocRef(
+        upstream = joinpath(clonedir, "ns"),
+        path = "ns",
+        name = "NestedSamplers"
+    ),
+    ("TuringLang/MCMCChains.jl.git", "gh-pages") => MultiDocumenter.MultiDocRef(
+        upstream = joinpath(clonedir, "mcmcc"),
+        path = "mcmcc",
+        name = "MCMCChains"
+    ),
 ]
-
-#("TuringLang/turing.ml.git", "gh-pages") => MultiDocumenter.MultiDocRef(
-#        upstream = joinpath(clonedir, "tur"),
-#        path = "tur",
-#        name = "Turing"
-#    ),
 
 # using SSH for cloning is suggested when you're dealing with private repos, because
 # an ssh-agent will handle your keys for you
